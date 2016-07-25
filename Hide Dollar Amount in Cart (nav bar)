@@ -1,0 +1,10 @@
+/* 
+	Hide dollar amount from cart in nav bar;
+	apply in super user app settings > custom CSS;
+*/
+
+<style> 
+	strong.currency {
+	    color: transparent;
+	}
+</style>
