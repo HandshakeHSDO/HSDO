@@ -1,4 +1,8 @@
-/* Hide category or manufacturer buttons from the homepage */
+/* 
+       Hide category or manufacturer buttons from the homepage;
+       apply in super user app settings > Custom CSS;
+       tags: homepage, hide, category buttons, home page promo;
+*/
 
 <style> 
 .v-manufacturers-list {
