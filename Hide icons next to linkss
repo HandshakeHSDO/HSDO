@@ -1,0 +1,11 @@
+/*
+    Hide icons next to help and downloads page links;
+    apply in super user app settings > CSS;
+    tags: icon, help pages, downloads, links, additional pages;
+*/
+
+<style>
+    [class*=" icon-"], [class^=icon-] {
+        color: transparent; 
+    }
+</style>
