@@ -1,0 +1,10 @@
+/*
+    Remove border from the hero image (can easily be changed colors by adding a color element;
+    apply in super user app settings > Custom CSS;
+    tags: home page, hero image, border
+
+<style>
+    .catalog-hero-unit .catalog-company-logo, .catalog-hero-unit .catalog-hero {
+        border: none;
+    }
+</style>
