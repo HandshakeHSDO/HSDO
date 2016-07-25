@@ -1,0 +1,9 @@
+/* 
+    Change the Help or Downloads page names in the nav bar of HSDO;
+    apply in super user app settings > Custom JS;
+    tags: links, page names, help page, downloads page;
+*/
+
+$("a[title=Help]").text("FAQ")
+$("a[title=Downloads]").text("Catalog")
+
