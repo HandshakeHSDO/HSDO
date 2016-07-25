@@ -1,0 +1,12 @@
+/* 
+    Hide SKU from the tile in the grid view;
+    apply on super user app settings > CSS;
+    tags: sku, hidden, catalog, tile view;
+*/
+
+
+<style>
+    p.sku {
+        display: none;
+    }
+</style>
