@@ -1,0 +1,7 @@
+/* Hide category or manufacturer buttons from the homepage */
+
+<style> 
+.v-manufacturers-list {
+       display: none !important;
+   }
+</style>
