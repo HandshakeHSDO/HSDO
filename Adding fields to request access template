@@ -1,0 +1,20 @@
+/*
+    This is for adding fields to the request access template for HSDO;
+    Please refer to lines 11/12 this is what you would paste into the template, in exactly that position (under {{ form.as_table }});
+    Create new label and reference it in the input id field and the input name field, placeholder text is optional;
+    apply on the request access template;
+    tags: request access, template, fields, tax id, handshake direct login page;
+*/
+
+{% csrf_token %}
+  
+    {{ form.as_table }}
+                                        <label for="tax_id">Tax ID:</label>
+                                        <input id="tax_id" name="tax_id" type="text" placeholder="EIN or SSN">
+    <div style="text-align: right;">
+    <input
+      class="btn-large btn-primary"
+      type="submit"
+      value="Submit">
+    </div>
+  </form>
