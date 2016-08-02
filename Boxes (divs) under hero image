@@ -1,0 +1,74 @@
+/*
+    This is for the home page promo messgae, 3 div boxes and 3 rows;
+    you can manipulate to show 1 or 2 out of the 3 rows (row sp-promo);
+    enter on home page promo and alter div box height/width settings in super user app settings > CSS > .span 3 {height:xxx; width:xxx;}
+    tags: div boxes, home page promo, sugar paper, rows, under hero image
+*/
+
+<style>
+    .sp-promo img {
+        min-width: 100%;
+    }
+    
+
+</style>
+<div class="row sp-promo">
+    <div class="span3">
+      <a href="https://wholesale.sugarpaper.com/catalog/74858-birthday" target="_blank" hspace="36">
+          <img alt="BIRTHDAY CARDS" src="https://c12217626.ssl.cf2.rackcdn.com/image/439085d51a0af8b082e5d2f922acbd3e25382ce4.jpeg" style="width: 366px; height: 256px;">
+          <p class="text-center noBM"><span><font size= "1" font face= "Avenir"><SPAN style="letter-spacing:2px"><center><br>Birthday Cards</center></SPAN></font></span></p>
+        </a>
+    </div>
+    <div class="span3">
+      <a href="https://wholesale.sugarpaper.com/catalog/238045-agenda" target="_blank" hspace="36">
+          <img alt="THE AGENDA" src="https://c12217626.ssl.cf2.rackcdn.com/image/a7ec64d5736e092eb3b60fbfb94f5b0f66aa89b3.jpeg" style="width: 366px; height: 256px;">
+          <p class="text-center noBM"><font size= "1" font face= "Avenir"><SPAN style="letter-spacing:2px"><center><br>THE AGENDA</center></SPAN></font></p>
+        </a>
+    </div>
+     <div class="span3">
+      <a href="https://wholesale.sugarpaper.com/catalog/149634-single-cards" target="_blank" hspace="36">
+          <img alt="SINGLE CARDS" src="https://c12217626.ssl.cf2.rackcdn.com/image/89865ed914bc47b93009dc3202acd12f50ddfa2c.jpeg" style="width: 366px; height: 256px;">
+          <p class="text-center noBM"><font size= "1" font face= "Avenir"><SPAN style="letter-spacing:2px"><center><br>SINGLE CARDS</center></SPAN></font></p>
+        </a>
+    </div>
+</div>
+<div class="row sp-promo">
+    <div class="span3">
+      <a href="https://wholesale.sugarpaper.com/catalog/426640-italian-leather" target="_blank" hspace="36">
+          <img alt="ITALIAN LEATHER" src="https://c12217626.ssl.cf2.rackcdn.com/image/393edd06e270511f782824fb9c9f10c4bffe1d8f.jpeg">
+          <p class="text-center noBM"><span><font size= "1" font face= "Avenir"><SPAN style="letter-spacing:2px"><center><br>ITALIAN LEATHER</center></SPAN></font></span></p>
+        </a>
+    </div>
+    <div class="span3">
+      <a href="https://wholesale.sugarpaper.com/catalog/74769-the-desk-collection" target="_blank" hspace="36">
+          <img alt="DESK COLLECTION" src="https://c12217626.ssl.cf2.rackcdn.com/image/bd6f718958702d21028d54de73d9f0bb0c326029.jpeg" style="width: 366px; height: 256px;">
+          <p class="text-center noBM"><font size= "1" font face= "Avenir"><SPAN style="letter-spacing:2px"><center><br>DESK COLLECTION</center></SPAN></font></p>
+        </a>
+    </div>
+    <div class="span3">
+      <a href="https://wholesale.sugarpaper.com/catalog/237721-stationery" target="_blank" hspace="36">
+          <img alt="SATIONERY" src="https://c12217626.ssl.cf2.rackcdn.com/image/9e035409c8974567f6655aa868b38aa8d273d9d1.jpeg" style="width: 366px; height: 256px;">
+          <p class="text-center noBM"><font size= "1" font face= "Avenir"><SPAN style="letter-spacing:2px"><center><br>STATIONERY</center></SPAN></font></p>
+        </a>
+    </div>
+</div>
+<div class="row sp-promo">
+    <div class="span3">
+      <a href="https://wholesale.sugarpaper.com/catalog/74842-notebooks-notepads" target="_blank" hspace="36">
+          <img alt="NOTEBOOKS" src="https://c12217626.ssl.cf2.rackcdn.com/image/ad8ab0a1572bf3810eebb8fcf18706dc66b5a8fd.jpeg" style="width: 366px; height: 256px;">
+          <p class="text-center noBM"><span><font size= "1" font face= "Avenir"><SPAN style="letter-spacing:2px"><center><br>NOTEBOOKS</center></SPAN></font></span></p>
+        </a>
+    </div>
+    <div class="span3">
+      <a href="https://wholesale.sugarpaper.com/catalog/237720-gift-wrap" target="_blank" hspace="36">
+          <img alt="GIFT WRAP" src="https://c12217626.ssl.cf2.rackcdn.com/image/e5a3ceec233483424006999af92ac2aabb056452.jpeg" style="width: 366px; height: 256px;">
+          <p class="text-center noBM"><font size= "1" font face= "Avenir"><SPAN style="letter-spacing:2px"><center><br>GIFT WRAP</center></SPAN></font></p>
+        </a>
+    </div>
+    <div class="span3">
+      <a href="https://wholesale.sugarpaper.com/catalog/237715-holiday" target="_blank" hspace="36">
+          <img alt="HOLIDAY" src="https://c12217626.ssl.cf2.rackcdn.com/image/def7e053d1012c17f962ebf4f3f2e53e41ba778d.jpeg" style="width: 366px; height: 256px;">
+          <p class="text-center noBM"><font size= "1" font face= "Avenir"><SPAN style="letter-spacing:2px"><center><br>HOLIDAY</center></SPAN></font></p>
+        </a>
+    </div>
+</div>
