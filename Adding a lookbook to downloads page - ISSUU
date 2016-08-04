@@ -1,0 +1,14 @@
+/* 
+    This code is specific to lookbooks created on ISSUU;
+    Replace the link in the code to reflect the actual lookbook;
+    place in downloads page markup;
+    tags: downloads, catalog, lookbook, issuu;
+*/
+
+<div>
+<h></h>
+ <p><center><font size= "2" font face= "Avenir"><SPAN style="letter-spacing:2px">2016 PRODUCT CATALOG</SPAN></font></center></p>
+    <p>
+           <iframe style="width:1200px;height:900px" src="https://issuu.com/magnoliababylayette/docs/fall_2016_visual_ship_schedule/5?e=16031500/33369733" seamless=”seamless” scrolling= “no” frameborder= “0” allowtransparency=”true”></iframe>
+    </p>
+</div>
