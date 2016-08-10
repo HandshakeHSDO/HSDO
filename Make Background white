@@ -1,0 +1,13 @@
+/*
+    Make the background side panels white instead of grey;
+    enter into super user CSS in a <style> tag;
+    tags - background, white, plain, color,;
+*/
+
+    body {
+          background-image: none;
+          background-color: none;
+          background: 100px;
+          display: block;
+        font-family: Verdana;
+        }
