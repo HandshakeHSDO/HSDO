@@ -1,0 +1,15 @@
+/*
+    add videos to home page promo, iframe can be exported from all major video hosting apps;
+    replace iframes and you can delete/add divs based off of how many videos you need;
+    tags: video, videos, iframe, embed, home page, tutorial;
+*/
+
+<div style="float:left;width:auto;">
+  <iframe src="https://player.vimeo.com/video/59056788?title=0&byline=0&portrait=0" width="580" height="326" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  <p><a href="https://vimeo.com/59056788"></p>
+</div>
+<div style="float:right;width:auto;">
+  <iframe src="https://player.vimeo.com/video/78164653?title=0&byline=0&portrait=0" width="580" height="326" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
+<div style="clear:both;height:1em;"></div>
+</div>
