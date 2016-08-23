@@ -1,0 +1,17 @@
+/*
+    shows how to get rid of the side grey panels on every page in HSDO;
+    change the color to white or anything; 
+    use the "box-shadow" code to get rid of the border;
+    tags: background, color, homepage, side panels, grey, gray;
+*/
+
+<style>
+    body {
+        background-image: none;
+        background-color: white;
+    }
+    
+    .container>.content {
+        box-shadow: 0 0px 0px rgba(0,0,0,.15);
+    }
+</style>
