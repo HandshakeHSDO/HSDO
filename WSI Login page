@@ -1,0 +1,245 @@
+
+
+{% extends "base.djhtml" %}
+
+{% block page_title %}Log in{% endblock %}
+
+{% block base_body_container_attributes %}
+    class="container storefront-signup-login"
+{% endblock %}
+
+{% block base_body_content_attributes %}
+    class="content"
+{% endblock %}
+
+{% block base_body_navbar %}{% endblock %}
+
+{% block base_notifications %}
+    {% if error_messages %}
+    <div class="alerts">
+         <div class="alert alert-block alert-error">
+            {% for msg in error_messages %}
+                <p>{{ msg }}</p>
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+{% endblock %}
+
+
+{% block base_body_content %}
+<style type="text/css">
+      #custom_storefront p {
+      	font-family: "Proxima Nova W01", sans-serif;
+      }
+      
+      .storefront-signup-login .content h3 {
+      text-transform: uppercase;
+      }
+      
+      .storefront-signup-login .content .signup-login {
+      		border: 2px solid grey;
+  		padding: 30px;
+  		padding-right: 45px;
+  		background-color: white;
+  		float: none;
+  		width: 40%;
+  		margin: auto;
+  		display: block;
+      		
+      }
+        .pink { color: #fff5ee; }
+        body { 
+            font-family: "Monotype Baskerville W01", serif; 
+            font-size: 15px;
+            line-height: 1.533;
+            letter-spacing: 0.025em;
+            background-color: white;
+            background-image: URL("https://4.bp.blogspot.com/-PgizuxNrcvs/Vyun7gmwnwI/AAAAAAAADmo/xepz__y1SzICY3zGwKIJq3VHZoa4VeTLgCLcB/s1600/williams-sonoma-dipped-cutting-boards-c.jpg");
+  		background-size: cover;
+        }
+        body .content {
+             -webkit-box-shadow: none !important; 
+             -moz-box-shadow: none !important; 
+             box-shadow: none !important; 
+        }
+        #custom_storefront p {
+            margin-top: 0;
+            margin-bottom: 1.5em;
+        }
+        #custom_storefront a {
+            color: #E59B88;
+        }
+        #custom_storefront a:hover {
+            color: #e0866f;
+            text-decoration: none;
+        }
+        #custom_storefront label { 
+            font-weight: normal;
+            display: inline-block;
+            color: #302a2c;
+            margin-top: 32px;
+            margin-bottom: 22px;
+            font-family: "Proxima Nova W01", sans-serif;
+            font-size: 9px;
+            text-transform: uppercase;
+            letter-spacing: .3em
+        }
+        #custom_storefront .section-title {
+            font-size: 18px;
+            font-weight: normal !important;
+            font-family: "Proxima Nova W01", sans-serif;
+            color: #302a2c;
+        }
+        #custom_storefront .signup-login h4 {
+            color: rgb(48, 42, 44);
+            display: block;
+            font-family: 'Proxima Nova W01', sans-serif;
+            font-size: 18px;
+            font-weight: normal;
+            letter-spacing: 5.400000095367432px;
+            line-height: 22px;
+            margin-bottom: 10px;
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top: 0px;
+            padding-bottom: 0px;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 0px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        #custom_storefront .forgot-password-wrapper {
+            display: inline-block;
+            margin-left: 12px;
+        }
+
+        #custom_storefront .btn-primary {
+            background: #302A2C;
+            font-family: "Proxima Nova W01", sans-serif;
+            font-weight: 400;
+            color: #fff !important;
+            -webkit-appearance: none;
+            box-shadow: none;
+            display: inline-block;
+            cursor: pointer;
+            border: #302A2C 1px solid;
+            text-align: center;
+            line-height: normal;
+            padding: 18px 36px;
+            border-radius: 0;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: .3em;
+            -webkit-transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            -moz-transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        #custom_storefront .btn.btn-primary:hover {
+            background: #ffffff;
+            color: #302A2C !important;
+            border: #302A2C 1px solid;
+        }
+
+        #custom_storefront form input {
+            margin-bottom: 22px;
+            clear: both;
+            border: 1px solid #D1D3D4;
+            display: block;
+            padding: 10px 12px;
+            border-radius: 2px;
+            background: #fff;
+            color: #010101 !important;
+            letter-spacing: .04em;
+        }
+
+        #custom_storefront form input[type="text"],
+        #custom_storefront form input[type="password"] {
+            font-style: italic;
+            width: 100%;
+        }
+
+        #custom_storefront input:focus {
+            border-color: #D1D3D4 !important;
+            outline: 1px solid #c69f67;
+            box-shadow: none;
+      }
+  #custom_storefront {
+	display: block;
+    	position: relative;
+    	transform: translateY(-50%);
+    	top: 40vh;
+}
+  }
+      
+      .loginimage {
+      	padding-top: 13%;
+      
+      }
+      
+      img {
+      	max-width: 120%;
+      }
+  .container>.content {
+  	background-color: transparent;
+  }
+     
+    </style>
+
+    <div id="custom_storefront">
+	
+
+ <div class="signup-login">
+                <h4>
+                    Log in
+                </h4>
+                <hr>
+                <form method="post" action="{{ loginURL }}">
+                    {% csrf_token %}
+                    {{ form.as_table }}
+                    <div style="text-align: left;">
+                        <input
+                            class="btn btn-large btn-primary login-button"
+                            type="submit"
+                            value="login"
+                            class="submit_input"
+                        />
+                    {% if account_assets %}
+                        <span class="forgot-password-wrapper">
+                            <a href="{% url 'forgot_password1' %}">Forgot your password?</a>
+                        </span>
+                    {% endif %}
+                    </div>
+                </form>
+     
+
+               
+                <p>
+                    <a class="btn btn-primary" href="{% url 'buyer_request' %}">Register</a>
+                </p>
+                
+
+            </div>
+        <div class="span6">
+              
+           
+
+        </div>
+
+
+
+    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>    </div>        </div>
+    </div>
+
+
+{% endblock %}
+
+{% block base_body_dependencies %}
+    <script src="{{ BB_STATIC_URL }}dist/handshake-signup.min.js"></script>
+{% endblock %}
+
+{% block base_footer %}{% endblock %}
+
