@@ -1,0 +1,21 @@
+/*
+    If you need to change font size in the navigation bar (or any other font attributes) use this code in the super user CSS;
+    wrap in a style tag;
+    nav, navigation, bar, font, size;
+    
+*/
+
+<style>
+
+.navbar-handshake-top .nav>li>a {
+    font-size: 17px;
+}
+
+.navbar-search .search-query {
+    font-size: 17px;
+}
+.brand-nav .brand-nav-cart-status .nav>li>a .empty-cart-label {
+    font-size: 17px;
+}
+
+</style>
