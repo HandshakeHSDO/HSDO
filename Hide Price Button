@@ -1,0 +1,54 @@
+This code adds a button to hide pricing on HSDO. The toggle is avail to the buyers directly. 
+Paste into Super user JS 
+
+
+
+<!-- Hide Price Button -->
+(function () {
+    var NS = "hide-prices",
+        INTERVAL = 200,
+        storage = window.sessionStorage,
+        $priceSwitchButton = $("<button type='button' id='price-toggle' class='btn pull-right'>$</button>");
+
+    function getStoredValue () {
+        return JSON.parse(storage.getItem(NS) || "false");
+    }
+
+    function keyDownHandler (e) {
+        if (!e.ctrlKey || e.which !== 52) { // 52 is $/4
+            return;
+        }
+        toggleStoredValue();
+        priceSwitch();
+    }
+
+    function onReady () {
+        $("body").on("click." + NS, ".v-controls:visible #price-toggle", priceToggleClickHandler);
+        setInterval(pollForRender, INTERVAL);
+        priceSwitch();
+    }
+
+    function priceSwitch() {
+        $("body").toggleClass(NS, getStoredValue());
+    }
+
+    function priceToggleClickHandler (){
+        toggleStoredValue();
+        priceSwitch();
+    }
+
+    function pollForRender () {
+        if ($priceSwitchButton.is(":hidden")) {
+            $priceSwitchButton.appendTo(".v-controls:visible:not(:has(#price-toggle))");
+        }
+    }
+
+    function toggleStoredValue () {
+        storage.setItem(NS, JSON.stringify(!getStoredValue()));
+    }
+
+    $(document)
+        .on("keydown." + NS, keyDownHandler)
+        .ready(onReady);
+}());
+<!-- End Hide Price Button -->
