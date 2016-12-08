@@ -1,0 +1,10 @@
+Add custom fonts to HSDO using the following CSS code:
+font, fonts, custom, font
+
+<style>
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+body {
+    font-family: proximanova, 'Montserrat';
+}
+</style>
