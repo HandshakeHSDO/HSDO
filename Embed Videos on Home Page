@@ -2,6 +2,8 @@
     add videos to home page promo, iframe can be exported from all major video hosting apps;
     replace iframes and you can delete/add divs based off of how many videos you need;
     tags: video, videos, iframe, embed, home page, tutorial;
+    
+    ```simply ad '&autoplay=true' add the end of your embed src url```
 */
 
 <div style="float:left;width:auto;">
